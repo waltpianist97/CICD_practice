@@ -23,8 +23,9 @@ def test_step3():
 @pytest.mark.dependency(depends=["test_step3"])
 def test_step4():
     # divisione per zero gestita
-    assert divide(4, 0) == "Division by zero error"
-
+    with pytest.raises(ZeroDivisionError):
+        divide(5, 0)
+        
 @pytest.mark.dependency(depends=["test_step4"])
 def test_step5():
     # piccolo “scherzetto” finale
