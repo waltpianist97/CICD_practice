@@ -4,7 +4,7 @@ Progetto di prova per capire come funziona CI/CD con Python e GitHub Actions.
 
 ## Badge CI
 
-![Python Tests](https://github.com/tuo-username/CICD_practice/actions/workflows/python-test.yml/badge.svg)
+![Python Tests](https://github.com/waltpianist97/CICD_practice/actions/workflows/python-test.yml/badge.svg)
 
 ## Descrizione
 
