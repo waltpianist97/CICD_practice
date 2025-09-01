@@ -13,7 +13,7 @@ def test_step1():
 
 @pytest.mark.dependency(depends=["test_step1"])
 def test_step2():
-    assert add(2, 2) == 3
+    assert add(2, 2) == 4
 
 @pytest.mark.dependency(depends=["test_step2"])
 def test_step3():
