@@ -10,3 +10,9 @@ def divide(a,b):
 
 def subtract(a,b):
     return a - b
+
+
+def sqrt(a):
+    if a < 0:
+        raise ValueError("Cannot compute square root of negative number")
+    return a ** 0.5
