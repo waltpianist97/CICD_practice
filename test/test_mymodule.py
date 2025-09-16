@@ -3,7 +3,8 @@ import os
 import pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from mymodule import add, divide, subtract, multiply
+from mymodule import add, divide, subtract,multiply, sqrt
+ 
 
 def test_add():
     assert add(1, 1) == 2
@@ -20,3 +21,10 @@ def test_subtract():
 
 def test_multiply():
     assert multiply(3, 2) == 6
+
+def test_sqrt():
+    assert sqrt(16) == 4
+
+def test_sqrt_negative():
+    with pytest.raises(ValueError):
+        sqrt(-1)
